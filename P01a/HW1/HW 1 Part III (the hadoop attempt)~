@@ -1,0 +1,9 @@
+[cloudera@quickstart ~]$ export HADOOP_HOME=/usr/lib/hadoop-mapreduce
+[cloudera@quickstart ~]$ cd Documents/HW1
+[cloudera@quickstart HW1]$ python wordcount_top10.py -r hadoop --hadoop-bin Shakespear/
+no configs found; falling back on auto-configuration
+no configs found; falling back on auto-configuration
+creating tmp directory /tmp/wordcount_top10.cloudera.20160129.060431.728694
+writing wrapper script to /tmp/wordcount_top10.cloudera.20160129.060431.728694/setup-wrapper.sh
+reading from STDIN
+

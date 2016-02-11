@@ -1,0 +1,68 @@
+[cloudera@quickstart ~]$ cd Documents/HW1
+[cloudera@quickstart HW1]$ python wordcount_top10.py -r inline Shakespear/
+no configs found; falling back on auto-configuration
+no configs found; falling back on auto-configuration
+creating tmp directory /tmp/wordcount_top10.cloudera.20160129.034937.703036
+
+PLEASE NOTE: Starting in mrjob v0.5.0, protocols will be strict by default. It's recommended you run your job with --strict-protocols or set up mrjob.conf as described at https://pythonhosted.org/mrjob/whats-new.html#ready-for-strict-protocols
+
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00000
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00001
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00002
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00003
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00004
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00005
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00006
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00007
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00008
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00009
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00010
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00011
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00012
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00013
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00014
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00015
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00016
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00017
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00018
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00019
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00020
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00021
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00022
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00023
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00024
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00025
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00026
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00027
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00028
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00029
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00030
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00031
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00032
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00033
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00034
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00035
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00036
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00037
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00038
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00039
+Counters from step 1:
+  (no counters found)
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper-sorted
+> sort /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00000 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00001 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00002 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00003 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00004 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00005 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00006 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00007 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00008 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00009 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00010 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00011 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00012 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00013 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00014 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00015 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00016 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00017 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00018 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00019 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00020 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00021 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00022 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00023 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00024 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00025 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00026 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00027 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00028 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00029 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00030 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00031 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00032 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00033 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00034 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00035 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00036 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00037 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00038 /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-mapper_part-00039
+writing to /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-reducer_part-00000
+Counters from step 1:
+  (no counters found)
+Moving /tmp/wordcount_top10.cloudera.20160129.034937.703036/step-0-reducer_part-00000 -> /tmp/wordcount_top10.cloudera.20160129.034937.703036/output/part-00000
+Streaming final output from /tmp/wordcount_top10.cloudera.20160129.034937.703036/output
+55224	"the"
+53413	"and"
+41362	"i"
+38348	"to"
+36296	"of"
+29206	"a"
+27264	"you"
+24960	"my"
+22230	"that"
+21923	"in"
+removing tmp directory /tmp/wordcount_top10.cloudera.20160129.034937.703036

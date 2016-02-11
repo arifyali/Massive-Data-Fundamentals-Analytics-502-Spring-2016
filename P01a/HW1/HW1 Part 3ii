@@ -1,0 +1,591 @@
+[cloudera@quickstart ~]$ cd Documents/HW1
+[cloudera@quickstart HW1]$ python wordcount_top10.py -r local Shakespear/
+t_top10.cloudera.20160129.035249.539846/input_part-00005
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/6
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/6/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/6/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/6
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00006
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/7
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/7/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/7/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/7
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00007
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/8
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/8/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/8/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/8
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00008
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/9
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/9/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/9/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/9
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00009
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00010
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00011
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00012
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00013
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00014
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00015
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00016
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00017
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00018
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00019
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00020
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00021
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00022
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00023
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00024
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00025
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00026
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00027
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00028
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00029
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00030
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00031
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00032
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00033
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00034
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00035
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00036
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00037
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00038
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00039
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00040
+Counters from step 1:
+  (no counters found)
+writing to /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper-sorted
+> sort /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00000 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00001 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00002 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00003 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00004 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00005 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00006 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00007 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00008 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00009 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00010 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00011 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00012 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00013 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00014 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00015 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00016 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00017 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00018 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00019 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00020 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00021 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00022 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00023 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00024 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00025 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00026 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00027 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00028 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00029 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00030 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00031 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00032 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00033 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00034 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00035 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00036 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00037 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00038 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00039 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00040
+^Awriting to /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00000
+> sh -ex setup-wrapper.sh /usr/bin/python wordcount_top10.py --step-num=0 --reducer /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00000 > /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00000
+writing to /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00001
+> sh -ex setup-wrapper.sh /usr/bin/python wordcount_top10.py --step-num=0 --reducer /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00001 > /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00001
+....
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/10
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00010
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/11
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00011
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/12
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00012
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/13
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00013
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/14
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00014
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/15
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00015
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/16
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00016
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/17
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00017
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/18
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00018
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/19
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00019
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/20
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00020
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/21
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00021
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/22
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00022
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/23
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00023
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/24
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00024
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/25
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00025
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/26
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00026
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/27
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00027
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/28
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00028
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/29
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00029
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/30
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00030
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/31
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00031
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/32
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00032
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/33
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00033
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/34
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00034
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/35
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00035
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/36
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00036
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/37
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00037
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/38
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00038
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/39
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00039
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/mapper/40
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --mapper /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00040
+Counters from step 1:
+  (no counters found)
+writing to /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper-sorted
+> sort /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00000 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00001 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00002 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00003 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00004 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00005 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00006 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00007 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00008 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00009 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00010 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00011 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00012 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00013 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00014 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00015 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00016 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00017 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00018 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00019 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00020 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00021 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00022 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00023 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00024 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00025 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00026 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00027 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00028 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00029 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00030 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00031 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00032 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00033 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00034 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00035 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00036 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00037 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00038 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00039 /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-mapper_part-00040
+^Awriting to /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00000
+> sh -ex setup-wrapper.sh /usr/bin/python wordcount_top10.py --step-num=0 --reducer /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00000 > /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00000
+writing to /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00001
+> sh -ex setup-wrapper.sh /usr/bin/python wordcount_top10.py --step-num=0 --reducer /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00001 > /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00001
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/0
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/0/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/0/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/0
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --reducer /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00000
+STDERR: + __mrjob_PWD=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/1
+STDERR: + exec
+STDERR: + /usr/bin/python -c 'import fcntl; fcntl.flock(9, fcntl.LOCK_EX)'
+STDERR: + export PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/1/mrjob.tar.gz:
+STDERR: + PYTHONPATH=/tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/1/mrjob.tar.gz:
+STDERR: + exec
+STDERR: + cd /tmp/wordcount_top10.cloudera.20160129.035249.539846/job_local_dir/0/reducer/1
+STDERR: + /usr/bin/python wordcount_top10.py --step-num=0 --reducer /tmp/wordcount_top10.cloudera.20160129.035249.539846/input_part-00001
+Counters from step 1:
+  (no counters found)
+Moving /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00000 -> /tmp/wordcount_top10.cloudera.20160129.035249.539846/output/part-00000
+Moving /tmp/wordcount_top10.cloudera.20160129.035249.539846/step-0-reducer_part-00001 -> /tmp/wordcount_top10.cloudera.20160129.035249.539846/output/part-00001
+Streaming final output from /tmp/wordcount_top10.cloudera.20160129.035249.539846/output
+53413	"and"
+41362	"i"
+29206	"a"
+21923	"in"
+19170	"is"
+16459	"for"
+15368	"it"
+14166	"be"
+13714	"his"
+12535	"but"
+55224	"the"
+38348	"to"
+36296	"of"
+27264	"you"
+24960	"my"
+22230	"that"
+17441	"not"
+15986	"with"
+15536	"me"
+13756	"your"
+removing tmp directory /tmp/wordcount_top10.cloudera.20160129.035249.539846
+
+
