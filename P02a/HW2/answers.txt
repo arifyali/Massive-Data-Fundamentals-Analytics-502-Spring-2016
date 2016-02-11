@@ -1,0 +1,39 @@
+PS02 Answers:
+
+1a. If your cluster has 1 node, how many wall clock seconds and how
+    many clock seconds (total, across all nodes) will be spent in the map
+    phase:
+
+1a.A: 10*31 clock seconds and the same amount of wall clock time since there is only one node
+
+1b. How much time will be spent in the reduce phase:
+
+1b.A: 100 clock seconds total and the same amount of wall clock time since there is only one node
+
+1c. How much time will be spent from the beginning of the job to the end:
+
+1c.A: 10*31+100 clock seconds/wall clock seconds 
+
+1d. Explain your answer:
+
+1d.A: There are 31 mapper jobs and one reducer job. Since we are running on only one node, we just 
+have to sum the clock seconds. Since there is only one node, there is no difference between wall clock
+seconds and clock seconds  
+
+
+2: If your cluster has 10 nodes, how many wall clock seconds and how
+   many clock seconds will be spent from the beginning to the end?
+
+2.A: Wall Clock seconds would be round(31/10)*10+10+100=140 Seconds. Clock Seconds would be 10*31+100.
+
+3: If your cluster has 100 nodes, how many wall clock seconds and how
+   many clock seconds will be spent from the beginning to the end?
+
+3.A: Wall Clock seconds would be ceiling(31/100)*10+100 Seconds = 110 Seconds. Clock Seconds would be 10*31+100.
+
+4: If your cluster has 1000 nodes, how many wall clock seconds and how
+   many clock seconds will be spent from the beginning to the end?
+
+4.A: Wall Clock seconds would be ceiling(31/1000)*10+100 Seconds = 110 Seconds. Clock Seconds would be 10*31+100. As in case 3, the number of nodes is more than the number of mapper jobs
+
+EC1: For 02/01/13, the logs only count the first 24 minutes for that day, which is why the logs captured less.
