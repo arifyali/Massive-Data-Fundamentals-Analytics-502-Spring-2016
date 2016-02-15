@@ -1,0 +1,6 @@
+17, Chlorine
+29, Copper
+35, Bromine
+53, Iodine
+99, Einsteinium
+549003, Adamantine

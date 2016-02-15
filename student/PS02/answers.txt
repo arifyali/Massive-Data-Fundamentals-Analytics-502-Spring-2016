@@ -1,0 +1,35 @@
+PS02 Answers:
+
+1a. If your cluster has 1 node, how many wall clock seconds and how
+    many clock seconds (total, across all nodes) will be spent in the map
+    phase:
+
+1a.A: [YOUR ANSWER HERE]
+
+1b. How much time will be spent in the reduce phase:
+
+1b.A: [YOUR ANSWER HERE]
+
+1c. How much time will be spent from the beginning of the job to the end:
+
+1c.A: [YOUR ANSWER HERE]
+
+1d. Explain your answer:
+
+1d.A: [YOUR ANSWER HERE]
+
+
+2: If your cluster has 10 nodes, how many wall clock seconds and how
+   many clock seconds will be spent from the beginning to the end?
+
+2.A: [YOUR ANSWER HERE]
+
+3: If your cluster has 100 nodes, how many wall clock seconds and how
+   many clock seconds will be spent from the beginning to the end?
+
+3.A: [YOUR ANSWER HERE]
+
+4: If your cluster has 1000 nodes, how many wall clock seconds and how
+   many clock seconds will be spent from the beginning to the end?
+
+4.A: [YOUR ANSWER HERE]

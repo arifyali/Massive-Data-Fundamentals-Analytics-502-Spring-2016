@@ -1,0 +1,6 @@
+100, 17, Yellow
+101, 35, Red
+102, 53, Purple
+103, 29, Green
+104, 49, Silver-Colored
+993243, 549003, Clear
