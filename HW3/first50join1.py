@@ -66,7 +66,7 @@ class First50Join(MRJob):
     # All of the keys are the same, so just take the first 50 values...
 
 
-    def first50reducer_init(self, key, value):
+    def first50reducer_init(self):
         self.counter = 0
 
     def first50reducer(self, key, values):
@@ -76,13 +76,12 @@ class First50Join(MRJob):
                 self.counter += 1
                 yield key, [date, country, line]
 
-   def steps(self):
+    def steps(self):
         return [
             MRStep(mapper=self.mapper,
                    reducer_init=self.reducer_init,
                    reducer=self.reducer,
                    reducer_final=self.reducer_final),
-
             MRStep(reducer_init=self.first50reducer_init,
                    reducer=self.first50reducer) ] 
 
