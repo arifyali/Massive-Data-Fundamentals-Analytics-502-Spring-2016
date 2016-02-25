@@ -61,7 +61,7 @@ class First50Join(MRJob):
 
     # Let MapReduce do the sorting this time!
     # All of the keys are the same, so just take the first 50 values...
-    SORT_VALUES = True
+    SORT_VALUES = True 
 
     def first50reducer_init(self, key, value):
         self.counter = 0
