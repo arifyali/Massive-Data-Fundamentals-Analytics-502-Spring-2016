@@ -18,12 +18,12 @@ class FwikiMaxmindJoin(MRJob):
             # Handle as a GeoLite2 file
             #
 		self.increment_counter("Info","Obs Count",1)
-		yield fields[0],("Obs", fields)
+		yield fields[0],("country", fields)
         else:
             # Handle as a weblog file
 		self.increment_counter("Info","Name Count",1)
 		fields = Weblog(line)
-		yield fields.ipaddr,("Name", line)
+		yield fields.ipaddr,("ip", line)
         
         # output <date,1>
         #yield (log.date, 1)
@@ -33,26 +33,30 @@ class FwikiMaxmindJoin(MRJob):
         name = None
         for v in values:
             
-            if v[0]=='Name':
+            if v[0]=='country':
                 name = v[1]
                 continue
-            if v[0]=='Obs':
+            if v[0]=='ip':
                 obs = v[1]
                 if name:
-                    yield (obs[1], 1)
+                    yield name[1], 1
                 else:
-                    self.increment_counter("Warn","Obs without Name")
-                    yield (obs[1], 0)
+                    self.increment_counter("Warn","countries without Name")
+                   
+
+    def mapper_counter(self, key, values):
+	yield key, 1
 
     def reducer_counter(self, key, values):
-        yield (key, sum(values))
+        yield key, sum(values)
 
     def steps(self):
         return [
             MRStep(mapper=self.mapper,
                    reducer=self.reducer),
 
-            MRStep(reducer=self.reducer_counter) ]
+            MRStep(mapper=self.mapper_counter,
+                   reducer=self.reducer_counter) ]
 
 if __name__=="__main__":
     FwikiMaxmindJoin.run()

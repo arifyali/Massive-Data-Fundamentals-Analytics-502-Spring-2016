@@ -6,11 +6,8 @@
 import mrjob
 from mrjob.job import MRJob
 from weblog import Weblog       # imports class defined in weblog.py
-from mrjob.step import MRStep
-import heapq
 import os
 
-TOPN=10
 class FwikiMaxmindJoin(MRJob):
     def mapper(self, _, line):
         # Is this a weblog file, or a MaxMind GeoLite2 file?
@@ -20,12 +17,12 @@ class FwikiMaxmindJoin(MRJob):
             # Handle as a GeoLite2 file
             #
 		self.increment_counter("Info","Obs Count",1)
-		yield fields[0],("Obs", fields)
+		yield fields[0],("country", fields)
         else:
             # Handle as a weblog file
 		self.increment_counter("Info","Name Count",1)
 		fields = Weblog(line)
-		yield fields.ipaddr,("Name", line)
+		yield fields.ipaddr,("ip", line)
         
         # output <date,1>
         #yield (log.date, 1)
@@ -35,37 +32,18 @@ class FwikiMaxmindJoin(MRJob):
         name = None
         for v in values:
             
-            if v[0]=='Name':
+            if v[0]=='country':
                 name = v[1]
                 continue
-            if v[0]=='Obs':
+            if v[0]=='ip':
                 obs = v[1]
                 if name:
-                    yield (obs[1], 1)
+                    yield key, (name,obs)
                 else:
-                    self.increment_counter("Warn","Obs without Name")
-                    yield (obs[1], 0)
+                    self.increment_counter("Warn","country without Name")
+                    yield key,("n/a",obs)
 
-    def reducer_counter(self, key, values):
-        yield (key, sum(values))
 
-    def top10_mapper(self, word, count):
-        # notice that we put the counts first!
-        yield "Top10", (count,word) 
-
-    def top10_reducer(self, key, values):
-	for values in heapq.nlargest(TOPN,values):
-		yield values
-
-    def steps(self):
-        return [
-            MRStep(mapper=self.mapper,
-                   reducer=self.reducer),
-
-            MRStep(reducer=self.reducer_counter),
-
-	    MRStep(mapper=self.top10_mapper,
-                   reducer=self.top10_reducer) ]
 
 if __name__=="__main__":
     FwikiMaxmindJoin.run()
