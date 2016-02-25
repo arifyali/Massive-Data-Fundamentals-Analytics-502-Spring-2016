@@ -6,6 +6,7 @@
 import mrjob
 import mrjob.compat
 from mrjob.job import MRJob
+from mrjob.step import MRStep
 import sys
 
 from weblog import Weblog  # imports class defined in weblog.py
@@ -73,6 +74,14 @@ class First50Join(MRJob):
                 self.counter += 1
                 yield key, [datetime, country, line]
 
+   def steps(self):
+        return [
+            MRStep(mapper=self.mapper,
+                   reducer_init=self.reducer_init,
+                   reducer=reducer
+                   reducer_final=reducer_final),
 
+            MRStep(reducer_init=self.first50reducer_init,
+                   reducer=self.first50reducer) ] 
 if __name__ == "__main__":
     First50Join.run()

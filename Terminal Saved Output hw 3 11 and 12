@@ -1,0 +1,190 @@
+Last login: Thu Feb 25 11:00:47 on ttys000
+Arifs-MacBook-Pro-3:~ arifali$ cd Documents/Georgetown/Massive-Data-Fundamentals-Analytics-502-Spring-2016/
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ ls
+ANLY502	HW3	P01a	P02a	student
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git add HW3
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git commit -m "added #12"
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   ANLY502 (modified content)
+
+no changes added to commit
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 24.44 MiB | 677.00 KiB/s, done.
+Total 18 (delta 9), reused 0 (delta 0)
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: error: Trace: 9d7bfb481bd3cee17eccc27c71877956
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File HW3/join1.txt is 452.49 MB; this exceeds GitHub's file size limit of 100.00 MB
+To https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016.git'
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git push -f
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 24.44 MiB | 194.00 KiB/s, done.
+Total 18 (delta 9), reused 0 (delta 0)
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: error: Trace: 049120fb4f20bee0ba3f7d34bb28bb98
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File HW3/join1.txt is 452.49 MB; this exceeds GitHub's file size limit of 100.00 MB
+To https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016.git'
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ cd..
+-bash: cd..: command not found
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ ls
+ANLY502	HW3	P01a	P02a	student
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ cd
+Arifs-MacBook-Pro-3:~ arifali$ cd Documents/Georgetown/
+Arifs-MacBook-Pro-3:Georgetown arifali$ ls
+Bayesian-Statistics-Mathematics-640
+Chihara2011.pdf
+Optimization Analytics 561 Fall 2015
+Probabilistic and Statistical Modeling Fall 2015
+Statistical-Learning-Analytics-512-Spring-2016
+rebased massive
+~$oject Assignment 1 Write Up.docx
+Arifs-MacBook-Pro-3:Georgetown arifali$ git clone https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016.git
+Cloning into 'Massive-Data-Fundamentals-Analytics-502-Spring-2016'...
+remote: Counting objects: 259, done.
+remote: Compressing objects: 100% (195/195), done.
+remote: Total 259 (delta 53), reused 0 (delta 0), pack-reused 53
+Receiving objects: 100% (259/259), 19.09 MiB | 796.00 KiB/s, done.
+Resolving deltas: 100% (56/56), done.
+Checking connectivity... done.
+Arifs-MacBook-Pro-3:Georgetown arifali$ cd Massive-Data-Fundamentals-Analytics-502-Spring-2016/
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ ls
+ANLY502	HW3	P01a	P02a	student
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git add .
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git commit -m "HW3 cleanup"
+[master 4465588] HW3 cleanup
+ 33 files changed, 223 insertions(+), 683 deletions(-)
+ rename {PS03 => HW3}/.attach_pid13799 (100%)
+ rename {PS03 => HW3}/Makefile (100%)
+ rename {PS03 => HW3}/README.txt (100%)
+ rename {P03a => HW3}/answers.txt (100%)
+ rename {PS03 => HW3}/first50.py (100%)
+ rename P03a/P03a/first50join1.txt => HW3/first50.txt (100%)
+ rename {PS03 => HW3}/first50join1.py (100%)
+ rename {PS03 => HW3}/first50join1.txt (100%)
+ rename {P03a => HW3}/guanly502_gutenberg_ls.txt (100%)
+ rename {P03a => HW3}/guanly502_gutenberg_top10.txt (100%)
+ rename {P03a/P03a => HW3}/join1.py (79%)
+ rename {P03a/P03a => HW3}/join2.py (74%)
+ create mode 100644 HW3/join2.txt
+ rename {P03a/P03a => HW3}/join3.py (78%)
+ create mode 100644 HW3/join3.txt
+ create mode 100644 HW3/sortedjoinbycountry.py
+ rename {PS03 => HW3}/validator.py (100%)
+ rename {PS03 => HW3}/weblog.py (100%)
+ create mode 100644 HW3/wordcount_top10.py
+ rename {P03a => HW3}/wordcount_top10.txt (100%)
+ delete mode 100644 P03a/P03a.zip
+ delete mode 100644 P03a/P03a/answers.txt
+ delete mode 100644 P03a/P03a/guanly502_gutenberg_ls.txt
+ delete mode 100644 P03a/P03a/guanly502_gutenberg_top10.txt
+ delete mode 100644 P03a/P03a/join1.txt
+ delete mode 100644 P03a/P03a/join2.txt
+ delete mode 100644 P03a/P03a/join3.txt
+ delete mode 100644 P03a/P03a/wordcount_top10.txt
+ delete mode 100644 P03a/count_counters.txt
+ delete mode 100644 PS03/answers.txt
+ delete mode 100644 PS03/join1.py
+ delete mode 120000 PS03/top1000ips_to_country.txt
+ delete mode 100644 PS03/weblog.pyc
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.90 KiB | 0 bytes/s, done.
+Total 9 (delta 4), reused 0 (delta 0)
+To https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016.git
+   a7ee021..4465588  master -> master
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/arifyali/Massive-Data-Fundamentals-Analytics-502-Spring-2016
+   4465588..cadf573  master     -> origin/master
+Updating 4465588..cadf573
+Fast-forward
+ HW3/sortedjoinbycountry.py |  10 ++++++----
+ HW3/weblog.pyc             | Bin 0 -> 3778 bytes
+ 2 files changed, 6 insertions(+), 4 deletions(-)
+ create mode 100644 HW3/weblog.pyc
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Arifs-MacBook-Pro-3:Massive-Data-Fundamentals-Analytics-502-Spring-2016 arifali$ 
