@@ -13,7 +13,7 @@ from weblog import Weblog  # imports class defined in weblog.py
 
 
 class First50Join(MRJob):
-    SORT_VALUES = True 
+    SORT_VALUES = True
 
     def mapper(self, _, line):
         # Is this a weblog file, or a MaxMind GeoLite2 file?
@@ -46,7 +46,7 @@ class First50Join(MRJob):
         # values has all the lines for this key
         country = None
         for v in values:
-            if v[0:1] == "+":  # found the location!
+            if v[0] == "+":  # found the location!
                 country = v[1:]
                 continue
             if not country:  #
@@ -54,19 +54,18 @@ class First50Join(MRJob):
                 continue
             # If we get here, v is a logfile line. Parse it again
             o = Weblog(v)
+            self.increment_counter("Join", "Geolocated", 1)
             self.lowest.append((o.datetime, country, v))
-            self.lowest = sorted(self.lowest)[0:50]
+            self.lowest = sorted(self.lowest)[:50]
 
     def reducer_final(self):
         """Output the lowest 50"""
-        for (datetime, country, line) in self.lowest:
-            yield "First50Geolocated", [datetime, country, line]
+        for joined_data in self.lowest:
+            yield "FIRST50Geolocated", joined_data 
 
     # Let MapReduce do the sorting this time!
     # All of the keys are the same, so just take the first 50 values...
-
-
-    def first50reducer_init(self, key, value):
+    def first50reducer_init(self):
         self.counter = 0
 
     def first50reducer(self, key, values):
@@ -76,15 +75,14 @@ class First50Join(MRJob):
                 self.counter += 1
                 yield key, [date, country, line]
 
-   def steps(self):
+    def steps(self):
         return [
             MRStep(mapper=self.mapper,
                    reducer_init=self.reducer_init,
                    reducer=self.reducer,
                    reducer_final=self.reducer_final),
-
             MRStep(reducer_init=self.first50reducer_init,
-                   reducer=self.first50reducer) ] 
+                   reducer=self.first50reducer) ]
 
 if __name__ == "__main__":
     First50Join.run()
