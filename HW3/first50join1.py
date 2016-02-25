@@ -72,14 +72,14 @@ class First50Join(MRJob):
         for (date, country, line) in values:
             if self.counter < 50:
                 self.counter += 1
-                yield key, [datetime, country, line]
+                yield key, [date, country, line]
 
    def steps(self):
         return [
             MRStep(mapper=self.mapper,
                    reducer_init=self.reducer_init,
-                   reducer=reducer
-                   reducer_final=reducer_final),
+                   reducer=self.reducer,
+                   reducer_final=self.reducer_final),
 
             MRStep(reducer_init=self.first50reducer_init,
                    reducer=self.first50reducer) ] 
