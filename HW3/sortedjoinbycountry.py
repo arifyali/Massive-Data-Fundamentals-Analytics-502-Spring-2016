@@ -10,6 +10,7 @@ import os
 import mrjob
 import mrjob.compat
 from mrjob.job import MRJob
+from mrjob.step import MRStep
 import sys
 
 from weblog import Weblog  # imports class defined in weblog.py
@@ -17,6 +18,7 @@ from weblog import Weblog  # imports class defined in weblog.py
 TOPN=10
 class First50Join(MRJob):
     def mapper(self, _, line):
+        SORT_VALUES = True
         # Is this a weblog file, or a MaxMind GeoLite2 file?
         filename = mrjob.compat.jobconf_from_env("map.input.file")
         import sys
@@ -51,13 +53,13 @@ class First50Join(MRJob):
             if v[0]=='ip':
                 obs = v[1]
                 if name:
-                    yield name[1], 1
+                    yield name, 1
                 else:
                     self.increment_counter("Warn","countries without Name")
                    
 
     def mapper_counter(self, key, values):
-    yield key, 1
+        yield key, 1
 
     def reducer_counter(self, key, values):
         yield key, sum(values)
@@ -68,8 +70,8 @@ class First50Join(MRJob):
         yield "Top10", (count,word) 
 
     def top10_reducer(self, key, values):
-    for values in heapq.nlargest(TOPN,values):
-        yield values
+        for values in heapq.nlargest(TOPN,values):
+            yield values
 
     def steps(self):
         return [
