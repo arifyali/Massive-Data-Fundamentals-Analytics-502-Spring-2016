@@ -9,28 +9,32 @@ from mrjob.job import MRJob
 from mrjob.step import MRStep
 import sys
 
-from weblog import Weblog  # imports class defined in weblog.py
+  # imports class defined in weblog.py
 
 class wikipedia_stats(MRJob):
+    SORT_VALUES = True
     def mapper(self, _, line):
-	article = line.split('\t')
-	yield article[1], 1
+	article = line.split('\t')[2]
+        date = article.split(' ')
+	day = date[0].split('-')
+        specificmonth = day[0]+'-'+day[1]
+        yield specificmonth, 1
 
     def reducer(self, key, value):
 	yield key, sum(value)
 
     def mapper_two(self, key, value):
-	yield "WikiMods", (key, value)
+        yield "WikiMods", (key, value)
 
     def reducer_two(self, key, value):
-	yield value[0], value[1]
+        for v in value:    
+            yield v[0], v[1]
 
     def steps(self):
-	return [
+        return [
             MRStep(mapper=self.mapper,
-	    reducer=self.reducer),
-	    MRStep(mapper=self.mapper_two,
-	    reducer=self.reducer_two) ]	
-
+                   reducer=self.reducer),
+            MRStep(mapper=self.mapper_two,
+                   reducer=self.reducer_two) ]
 if __name__ == "__main__":
     wikipedia_stats.run()
