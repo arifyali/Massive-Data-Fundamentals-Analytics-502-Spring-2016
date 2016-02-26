@@ -71,7 +71,7 @@ class First50Join(MRJob):
 
     def top10_reducer(self, key, values):
         for values in heapq.nlargest(TOPN,values):
-            yield values
+            yield v[1], v[0]
 
     def steps(self):
         return [
