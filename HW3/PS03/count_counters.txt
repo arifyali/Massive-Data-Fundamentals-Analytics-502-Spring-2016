@@ -1,0 +1,191 @@
+no configs found; falling back on auto-configuration
+no configs found; falling back on auto-configuration
+creating tmp directory /tmp/wordcount_top10.hadoop.20160215.031058.609012
+writing wrapper script to /tmp/wordcount_top10.hadoop.20160215.031058.609012/setup-wrapper.sh
+Using Hadoop version 2.7.1
+Copying local files into hdfs:///user/hadoop/tmp/mrjob/wordcount_top10.hadoop.20160215.031058.609012/files/
+
+PLEASE NOTE: Starting in mrjob v0.5.0, protocols will be strict by default. It's recommended you run your job with --strict-protocols or set up mrjob.conf as described at https://pythonhosted.org/mrjob/whats-new.html#ready-for-strict-protocols
+
+HADOOP: packageJobJar: [] [/usr/lib/hadoop/hadoop-streaming-2.7.1-amzn-0.jar] /tmp/streamjob7162229611671035946.jar tmpDir=null
+HADOOP: Connecting to ResourceManager at ip-172-31-21-62.ec2.internal/172.31.21.62:8032
+HADOOP: Connecting to ResourceManager at ip-172-31-21-62.ec2.internal/172.31.21.62:8032
+HADOOP: MetricsConfigRecord disabledInCluster: false instanceEngineCycleSec: 60 clusterEngineCycleSec: 60 disableClusterEngine: false maxMemoryMb: 3072 maxInstanceCount: 500 lastModified: 1455504098075 
+HADOOP: Created MetricsSaver j-1HHFQMRUXJ082:i-232c46bb:RunJar:19108 period:60 /mnt/var/em/raw/i-232c46bb_20160215_RunJar_19108_raw.bin
+HADOOP: Loaded native gpl library
+HADOOP: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 02f444f0932ea7710dcc4bcdc1aa7ca55adf48c9]
+HADOOP: Total input paths to process : 1
+HADOOP: number of splits:16
+HADOOP: Submitting tokens for job: job_1455504091730_0001
+HADOOP: Submitted application application_1455504091730_0001
+HADOOP: The url to track the job: http://ip-172-31-21-62.ec2.internal:20888/proxy/application_1455504091730_0001/
+HADOOP: Running job: job_1455504091730_0001
+HADOOP: Job job_1455504091730_0001 running in uber mode : false
+HADOOP:  map 0% reduce 0%
+HADOOP:  map 6% reduce 0%
+HADOOP:  map 13% reduce 0%
+HADOOP:  map 19% reduce 0%
+HADOOP:  map 25% reduce 0%
+HADOOP:  map 31% reduce 0%
+HADOOP:  map 75% reduce 0%
+HADOOP:  map 88% reduce 0%
+HADOOP:  map 94% reduce 0%
+HADOOP:  map 100% reduce 0%
+HADOOP:  map 100% reduce 14%
+HADOOP:  map 100% reduce 43%
+HADOOP:  map 100% reduce 71%
+HADOOP:  map 100% reduce 100%
+HADOOP: Job job_1455504091730_0001 completed successfully
+HADOOP: Counters: 50
+HADOOP: 	File System Counters
+HADOOP: 		FILE: Number of bytes read=434892
+HADOOP: 		FILE: Number of bytes written=4235495
+HADOOP: 		FILE: Number of read operations=0
+HADOOP: 		FILE: Number of large read operations=0
+HADOOP: 		FILE: Number of write operations=0
+HADOOP: 		HDFS: Number of bytes read=3116211
+HADOOP: 		HDFS: Number of bytes written=248147
+HADOOP: 		HDFS: Number of read operations=69
+HADOOP: 		HDFS: Number of large read operations=0
+HADOOP: 		HDFS: Number of write operations=14
+HADOOP: 	Job Counters 
+HADOOP: 		Launched map tasks=16
+HADOOP: 		Launched reduce tasks=7
+HADOOP: 		Data-local map tasks=8
+HADOOP: 		Rack-local map tasks=8
+HADOOP: 		Total time spent by all maps in occupied slots (ms)=13169520
+HADOOP: 		Total time spent by all reduces in occupied slots (ms)=6344640
+HADOOP: 		Total time spent by all map tasks (ms)=292656
+HADOOP: 		Total time spent by all reduce tasks (ms)=70496
+HADOOP: 		Total vcore-seconds taken by all map tasks=292656
+HADOOP: 		Total vcore-seconds taken by all reduce tasks=70496
+HADOOP: 		Total megabyte-seconds taken by all map tasks=421424640
+HADOOP: 		Total megabyte-seconds taken by all reduce tasks=203028480
+HADOOP: 	Map-Reduce Framework
+HADOOP: 		Map input records=54544
+HADOOP: 		Map output records=462169
+HADOOP: 		Map output bytes=4341893
+HADOOP: 		Map output materialized bytes=868454
+HADOOP: 		Input split bytes=2832
+HADOOP: 		Combine input records=0
+HADOOP: 		Combine output records=0
+HADOOP: 		Reduce input groups=18959
+HADOOP: 		Reduce shuffle bytes=868454
+HADOOP: 		Reduce input records=462169
+HADOOP: 		Reduce output records=18959
+HADOOP: 		Spilled Records=924338
+HADOOP: 		Shuffled Maps =112
+HADOOP: 		Failed Shuffles=0
+HADOOP: 		Merged Map outputs=112
+HADOOP: 		GC time elapsed (ms)=3675
+HADOOP: 		CPU time spent (ms)=54880
+HADOOP: 		Physical memory (bytes) snapshot=8449273856
+HADOOP: 		Virtual memory (bytes) snapshot=55969755136
+HADOOP: 		Total committed heap usage (bytes)=10174857216
+HADOOP: 	Shuffle Errors
+HADOOP: 		BAD_ID=0
+HADOOP: 		CONNECTION=0
+HADOOP: 		IO_ERROR=0
+HADOOP: 		WRONG_LENGTH=0
+HADOOP: 		WRONG_MAP=0
+HADOOP: 		WRONG_REDUCE=0
+HADOOP: 	File Input Format Counters 
+HADOOP: 		Bytes Read=3113379
+HADOOP: 	File Output Format Counters 
+HADOOP: 		Bytes Written=248147
+HADOOP: Output directory: hdfs:///user/hadoop/tmp/mrjob/wordcount_top10.hadoop.20160215.031058.609012/step-output/1
+Counters from step 1:
+  (no counters found)
+HADOOP: packageJobJar: [] [/usr/lib/hadoop/hadoop-streaming-2.7.1-amzn-0.jar] /tmp/streamjob5931126053753562478.jar tmpDir=null
+HADOOP: Connecting to ResourceManager at ip-172-31-21-62.ec2.internal/172.31.21.62:8032
+HADOOP: Connecting to ResourceManager at ip-172-31-21-62.ec2.internal/172.31.21.62:8032
+HADOOP: MetricsConfigRecord disabledInCluster: false instanceEngineCycleSec: 60 clusterEngineCycleSec: 60 disableClusterEngine: false maxMemoryMb: 3072 maxInstanceCount: 500 lastModified: 1455504098075 
+HADOOP: Created MetricsSaver j-1HHFQMRUXJ082:i-232c46bb:RunJar:19400 period:60 /mnt/var/em/raw/i-232c46bb_20160215_RunJar_19400_raw.bin
+HADOOP: Loaded native gpl library
+HADOOP: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 02f444f0932ea7710dcc4bcdc1aa7ca55adf48c9]
+HADOOP: Total input paths to process : 7
+HADOOP: number of splits:21
+HADOOP: Submitting tokens for job: job_1455504091730_0002
+HADOOP: Submitted application application_1455504091730_0002
+HADOOP: The url to track the job: http://ip-172-31-21-62.ec2.internal:20888/proxy/application_1455504091730_0002/
+HADOOP: Running job: job_1455504091730_0002
+HADOOP: Job job_1455504091730_0002 running in uber mode : false
+HADOOP:  map 0% reduce 0%
+HADOOP:  map 14% reduce 0%
+HADOOP:  map 29% reduce 0%
+HADOOP:  map 33% reduce 0%
+HADOOP:  map 67% reduce 0%
+HADOOP:  map 76% reduce 0%
+HADOOP:  map 86% reduce 0%
+HADOOP:  map 90% reduce 0%
+HADOOP:  map 90% reduce 4%
+HADOOP:  map 100% reduce 9%
+HADOOP:  map 100% reduce 47%
+HADOOP:  map 100% reduce 61%
+HADOOP:  map 100% reduce 71%
+HADOOP:  map 100% reduce 86%
+HADOOP:  map 100% reduce 100%
+HADOOP: Job job_1455504091730_0002 completed successfully
+HADOOP: Counters: 50
+HADOOP: 	File System Counters
+HADOOP: 		FILE: Number of bytes read=198554
+HADOOP: 		FILE: Number of bytes written=3970523
+HADOOP: 		FILE: Number of read operations=0
+HADOOP: 		FILE: Number of large read operations=0
+HADOOP: 		FILE: Number of write operations=0
+HADOOP: 		HDFS: Number of bytes read=422658
+HADOOP: 		HDFS: Number of bytes written=216
+HADOOP: 		HDFS: Number of read operations=84
+HADOOP: 		HDFS: Number of large read operations=0
+HADOOP: 		HDFS: Number of write operations=14
+HADOOP: 	Job Counters 
+HADOOP: 		Launched map tasks=21
+HADOOP: 		Launched reduce tasks=7
+HADOOP: 		Data-local map tasks=19
+HADOOP: 		Rack-local map tasks=2
+HADOOP: 		Total time spent by all maps in occupied slots (ms)=14509980
+HADOOP: 		Total time spent by all reduces in occupied slots (ms)=6253020
+HADOOP: 		Total time spent by all map tasks (ms)=322444
+HADOOP: 		Total time spent by all reduce tasks (ms)=69478
+HADOOP: 		Total vcore-seconds taken by all map tasks=322444
+HADOOP: 		Total vcore-seconds taken by all reduce tasks=69478
+HADOOP: 		Total megabyte-seconds taken by all map tasks=464319360
+HADOOP: 		Total megabyte-seconds taken by all reduce tasks=200096640
+HADOOP: 	Map-Reduce Framework
+HADOOP: 		Map input records=18959
+HADOOP: 		Map output records=18959
+HADOOP: 		Map output bytes=456696
+HADOOP: 		Map output materialized bytes=202379
+HADOOP: 		Input split bytes=3906
+HADOOP: 		Combine input records=0
+HADOOP: 		Combine output records=0
+HADOOP: 		Reduce input groups=1
+HADOOP: 		Reduce shuffle bytes=202379
+HADOOP: 		Reduce input records=18959
+HADOOP: 		Reduce output records=10
+HADOOP: 		Spilled Records=37918
+HADOOP: 		Shuffled Maps =147
+HADOOP: 		Failed Shuffles=0
+HADOOP: 		Merged Map outputs=147
+HADOOP: 		GC time elapsed (ms)=4251
+HADOOP: 		CPU time spent (ms)=34930
+HADOOP: 		Physical memory (bytes) snapshot=10330390528
+HADOOP: 		Virtual memory (bytes) snapshot=66209964032
+HADOOP: 		Total committed heap usage (bytes)=12595494912
+HADOOP: 	Shuffle Errors
+HADOOP: 		BAD_ID=0
+HADOOP: 		CONNECTION=0
+HADOOP: 		IO_ERROR=0
+HADOOP: 		WRONG_LENGTH=0
+HADOOP: 		WRONG_MAP=0
+HADOOP: 		WRONG_REDUCE=0
+HADOOP: 	File Input Format Counters 
+HADOOP: 		Bytes Read=418752
+HADOOP: 	File Output Format Counters 
+HADOOP: 		Bytes Written=216
+HADOOP: Output directory: hdfs:///user/hadoop/tmp/mrjob/wordcount_top10.hadoop.20160215.031058.609012/output
+Counters from step 2:
+  (no counters found)
+Streaming final output from hdfs:///user/hadoop/tmp/mrjob/wordcount_top10.hadoop.20160215.031058.609012/output
+removing tmp directory /tmp/wordcount_top10.hadoop.20160215.031058.609012
+deleting hdfs:///user/hadoop/tmp/mrjob/wordcount_top10.hadoop.20160215.031058.609012 from HDFS
