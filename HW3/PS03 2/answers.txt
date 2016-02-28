@@ -1,0 +1,101 @@
+# ANLY502
+# Please provide your answers to the questions below:
+
+# Question #1:
+1a: (r3.8xlarge, 340.48)
+1b: (r3.8xlarge, 340.48)
+1c: (g2.8xlarge, 332.80)
+
+# Question 2:
+2a: 2016-02-13T20:46:59 February 13, 2016 at 8:46:59 PM UTC-5
+2b: 2016-02-14T01:51:35,367721912+0000
+2c: 01:56:33 up 8 min,  1 user,  load average: 0.00, 0.03, 0.04
+2d: 18160
+2e:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1      7.8G  1.2G  6.6G  15% /
+devtmpfs        489M   56K  489M   1% /dev
+tmpfs           498M     0  498M   0% /dev/shm
+
+2f: 1.7.0_95
+2g: us-east-1d
+2h: i-70b9f0f0
+2i:
+traceroute to www.qwest.net (204.147.80.94), 30 hops max, 60 byte packets
+ 1  216.182.224.68 (216.182.224.68)  2.156 ms  2.183 ms  2.255 ms
+ 2  100.64.13.87 (100.64.13.87)  1.665 ms 100.64.13.105 (100.64.13.105)  1.308 ms 100.64.13.107 (100.64.13.107)  2.566 ms
+ 3  100.64.12.250 (100.64.12.250)  1.859 ms 100.64.9.48 (100.64.9.48)  1.516 ms 100.64.11.146 (100.64.11.146)  2.381 ms
+ 4  100.65.2.224 (100.65.2.224)  13.810 ms 100.65.2.240 (100.65.2.240)  13.797 ms 100.65.2.80 (100.65.2.80)  18.671 ms
+ 5  100.66.0.22 (100.66.0.22)  18.930 ms 100.66.0.80 (100.66.0.80)  18.716 ms 100.66.0.72 (100.66.0.72)  21.333 ms
+ 6  100.66.3.128 (100.66.3.128)  17.848 ms 100.66.2.110 (100.66.2.110)  11.727 ms 100.66.2.96 (100.66.2.96)  20.620 ms
+ 7  100.66.7.129 (100.66.7.129)  12.148 ms 100.66.6.9 (100.66.6.9)  19.949 ms 100.66.7.205 (100.66.7.205)  13.428 ms
+ 8  * * *
+ 9  100.65.11.161 (100.65.11.161)  0.685 ms 100.65.9.1 (100.65.9.1)  0.737 ms 100.65.9.193 (100.65.9.193)  1.668 ms
+10  205.251.245.253 (205.251.245.253)  1.713 ms 205.251.244.232 (205.251.244.232)  1.767 ms 205.251.245.253 (205.251.245.253)  1.814 ms
+11  54.239.109.216 (54.239.109.216)  23.934 ms 54.239.110.62 (54.239.110.62)  17.700 ms 54.239.111.110 (54.239.111.110)  17.737 ms
+12  54.239.109.225 (54.239.109.225)  2.125 ms 54.239.109.125 (54.239.109.125)  1.745 ms 54.239.109.93 (54.239.109.93)  1.800 ms
+13  dca2-edge-02.inet.qwest.net (67.133.224.193)  2.068 ms  2.127 ms dca2-edge-02.inet.qwest.net (65.126.19.89)  2.300 ms
+14  min-core-01.inet.qwest.net (67.14.21.110)  32.297 ms  32.570 ms  32.584 ms
+15  min-svcs-02.inet.qwest.net (207.225.159.211)  32.868 ms  32.577 ms  31.942 ms
+16  www.qwest.net (204.147.80.94)  31.782 ms  31.792 ms  31.818 ms
+
+
+
+# Question 3:
+3a: 54.88.171.52, 52.90.120.211, 54.86.234.73
+3b: 172.31.21.62, 172.31.16.223, 172.31.16.222
+3c:
+Configured Capacity: 158801608704 (147.90 GB)
+Present Capacity: 158433150723 (147.55 GB)
+DFS Remaining: 157925732352 (147.08 GB)
+DFS Used: 507418371 (483.91 MB)
+DFS Used%: 0.32%
+Under replicated blocks: 408
+Blocks with corrupt replicas: 0
+Missing blocks: 0
+Missing blocks (with replication factor 1): 0
+
+-------------------------------------------------
+Live datanodes (2):
+
+Name: 172.31.16.222:50010 (ip-172-31-16-222.ec2.internal)
+Hostname: ip-172-31-16-222.ec2.internal
+Decommission Status : Normal
+Configured Capacity: 79400804352 (73.95 GB)
+DFS Used: 253754358 (242.00 MB)
+Non DFS Used: 184239114 (175.70 MB)
+DFS Remaining: 78962810880 (73.54 GB)
+DFS Used%: 0.32%
+DFS Remaining%: 99.45%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Mon Feb 15 02:56:33 UTC 2016
+
+
+Name: 172.31.16.223:50010 (ip-172-31-16-223.ec2.internal)
+Hostname: ip-172-31-16-223.ec2.internal
+Decommission Status : Normal
+Configured Capacity: 79400804352 (73.95 GB)
+DFS Used: 253664013 (241.91 MB)
+Non DFS Used: 184218867 (175.68 MB)
+DFS Remaining: 78962921472 (73.54 GB)
+DFS Used%: 0.32%
+DFS Remaining%: 99.45%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Mon Feb 15 02:56:34 UTC 2016
+
+3d:
+Total Nodes:2
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+ip-172-31-16-222.ec2.internal:8041	        RUNNING	ip-172-31-16-222.ec2.internal:8042	                           0
+ip-172-31-16-223.ec2.internal:8041	        RUNNING	ip-172-31-16-223.ec2.internal:8042	                           0
+
