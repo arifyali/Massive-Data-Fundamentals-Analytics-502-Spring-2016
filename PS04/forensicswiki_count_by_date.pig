@@ -42,18 +42,14 @@ logs_base =
      );
 
 -- YOUR CODE GOES HERE
-logs = FOREACH logs_base GENERATE ToDate(datetime_str,'dd/MMM/yyyy:HH:mm:ss Z') AS date, host, url, size;
+
+logs = FOREACH logs_base GENERATE ToDate(SUBSTRING(datetime_str,0,11),'dd/MMM/yyyy') AS date, host, url, size;
 logs2 = FOREACH logs GENERATE SUBSTRING(ToString(date),0,10) AS date, host, url, size;
-
-by_date = GROUP logs2 BY (date);
-
-date_counts = FOREACH by_date GENERATE
-group AS date, -- the key you grouped on
-COUNT(logs2); -- the number of log lines wiht this date
-
--- YOUR CODE SHOULD PUT THE RESULTS IN date_counts_sorted
+by_date = GROUP logs2 BY date;
+date_counts = FOREACH by_date GENERATE group as date, COUNT(logs2);
 date_counts_sorted = ORDER date_counts BY date;
 store date_counts_sorted INTO 'count_by_date' USING PigStorage();
+-- YOUR CODE SHOULD PUT THE RESULTS IN date_counts_sorted
 
 
 -- Get the results
