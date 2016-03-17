@@ -33,12 +33,18 @@ if __name__ == "__main__":
     lines  = sc.textFile( infile )
 
     ## YOUR CODE GOES HERE
+    counts = lines.flatMap(lambda line: line.split(' ')) \
+                  .map(lambda word: filter(unicode.isalpha,word.lower())) \
+                  .map(lambda x: (x, 1)) \
+                  .reduceByKey(add)
     ## PUT YOUR RESULTS IN top40counts
-
+    top40counts = counts.sortBy(lambda x: x[1], ascending=False) \
+                  .take(40)
     with open("wordcount_shakespeare4.txt","w") as fout:
         for (word, count) in top40counts:
             fout.write("{}\t{}\n".format(word,count))
     
+
     ## 
     ## Terminate the Spark job
     ##

@@ -38,16 +38,14 @@ logs_base =
 -- YOUR CODE GOES HERE
 logs = FOREACH logs_base GENERATE ToDate(SUBSTRING(datetime_str,0,11),'dd/MMM/yyyy') AS date, host, url, size;
 logs2 = FOREACH logs GENERATE SUBSTRING(ToString(date),0,10) AS date, host, url, size;
-logs3 = FOREACH logs2 GENERATE REGEX_EXTRACT(url,'(index.php\\?title=|/wiki/)([^ &]*)',2) AS wiki,url, date, host, size;
-by_date = GROUP logs3 BY url;
-
--- urls_2012 = FILTER by_date BY SUBSTRING(date,0,4)=='2012';
-url_counts = FOREACH by_date GENERATE group as url, COUNT(url);
-
+describe logs2;
+-- by_logs = GROUP logs2 BY date;
+logs3 = FOREACH logs2 GENERATE url, date, host, size, REGEX_EXTRACT(url,'(index.php\\?title=|/wiki/)([^ &]*)',0) AS wiki;
+urls_2012 = FILTER logs3 BY SUBSTRING(date,0,4)=='2012';
 
 -- PUT YOUR RESULTS IN output
 
-STORE url_counts INTO 'forensicswiki_page_top20' USING PigStorage();
+STORE urls_2012 INTO 'forensicswiki_page_top20' USING PigStorage();
 
 
 -- Get the results
