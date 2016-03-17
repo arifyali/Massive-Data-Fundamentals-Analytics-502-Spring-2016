@@ -29,12 +29,12 @@ if __name__ == "__main__":
     sc     = SparkContext( appName="Wikipedia Count" )
     lines  = sc.textFile( infile )
     ## YOUR CODE GOES HERE
-    counts = lines.flatMap(lambda line: line.split('\t'))\
+    counts = lines.map(lambda line: line.split('\t'))\
                   .map(lambda article: (article[2])[0:7]) \
                   .map(lambda date: (date, 1)) \
                   .reduceByKey(add)
     ## PUT YOUR RESULTS IN counts
-    sorted_counts = counts.sortBy(lambda x: x[1], ascending=False)
+    sorted_counts = counts.sortBy(lambda x: x[1], ascending=False).collect()
 
     with open("wikipedia_by_month.txt","w") as fout:
         for (date, count) in sorted_counts:
