@@ -15,10 +15,10 @@ DEFINE EXTRACT       org.apache.pig.piggybank.evaluation.string.EXTRACT();
 -- raw_logs = load 's3://gu-anly502/ps03/forensicswiki.2012-01.unzipped/access.log.2012-01-01' as (line:chararray);
 --
 -- This URL reads a month:
--- raw_logs = load 's3://gu-anly502/ps03/forensicswiki.2012-01.unzipped/access.log.2012-01-??' as (line:chararray);
+raw_logs = load 's3://gu-anly502/ps03/forensicswiki.2012-01.unzipped/access.log.2012-01-??' as (line:chararray);
 --
 -- This URL reads all of 2012:
-raw_logs = load 's3://gu-anly502/ps03/forensicswiki.2012.txt' as (line:chararray);
+--raw_logs = load 's3://gu-anly502/ps03/forensicswiki.2012.txt' as (line:chararray);
 
  
 -- logs_base processes each of the lines 
