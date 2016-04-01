@@ -52,14 +52,14 @@ create temporary table bot_stats (
 );
 
 insert overwrite table bot_stats
-  select from_unixtime(unix_timestamp(rawdatetime, "[dd/MM/yyyy:HH:mm:ss Z]"), '%Y-%m'), 
-         count(bot), 
-         count(bot), 
+  select from_unixtime(date, '%Y-%m'), 
+         count(*), 
+         count(*), 
          size,
          sum(if(bot, size,0),
          sum(if(bot,0,size))
-  from raw_logs
-  group by from_unixtime(unix_timestamp(rawdatetime, "[dd/MM/yyyy:HH:mm:ss Z]"), '%Y-%m')
+  from bot_logs
+  group by from_unixtime(unix_timestamp(date, '%Y-%m')
   ; 
 
 select yearmonth,botcount,nonbotcount from bot_stats order by yearmonth;
