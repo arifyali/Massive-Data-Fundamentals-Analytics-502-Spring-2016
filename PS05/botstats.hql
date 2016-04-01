@@ -22,8 +22,8 @@ WITH SERDEPROPERTIES (
   "output.format.string" = "%1$s %2$s %3$s %4$s %5$s %6$s %7$s %8$s %9$s"
 )
 STORED AS TEXTFILE
-LOCATION 's3://gu-anly502/ps05/forensicswiki/2012/';
---LOCATION 's3://gu-anly502/ps05/forensicswiki/2012/12/';
+--LOCATION 's3://gu-anly502/ps05/forensicswiki/2012/';
+LOCATION 's3://gu-anly502/ps05/forensicswiki/2012/12/';
 
 DROP TABLE IF EXISTS bot_logs;
 create temporary table bot_logs (
