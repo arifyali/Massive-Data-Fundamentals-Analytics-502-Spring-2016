@@ -59,7 +59,8 @@ insert overwrite table bot_stats
          sum(if(bot, size,0),
          sum(if(bot,0,size))
 
-  from raw_logs; 
+  from raw_logs
+  group by from_unixtime(unix_timestamp(rawdatetime, "[dd/MM/yyyy:HH:mm:ss Z]"), '%Y-%m'); 
 
 select yearmonth,botcount,nonbotcount from bot_stats order by yearmonth;
 
