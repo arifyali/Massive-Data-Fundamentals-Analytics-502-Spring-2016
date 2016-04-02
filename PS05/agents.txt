@@ -1,16 +1,26 @@
-+----------+--+
-|   _c0    |
-+----------+--+
-| 5437974  |
-| 7876016  |
-| 1526515  |
-| 1109049  |
-+----------+--+
-+--------+--+
-| agent  |
-+--------+--+
-+--------+--+
-+--------+--+
-| agent  |
-+--------+--+
-+--------+--+
++----------+----------+--+
+|    os    |   _c1    |
++----------+----------+--+
+|          | 5437974  |
+| windows  | 7876016  |
+| linux    | 1526515  |
+| mac      | 1109049  |
++----------+----------+--+
++---------------------------------------------------------------------------+--+
+|                                   agent                                   |
++---------------------------------------------------------------------------+--+
+| Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)          |
+| Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)  |
+| Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)   |
+| Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)   |
+| Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)       |
++---------------------------------------------------------------------------+--+
++----------------------------------------------------------------------------------------------------------------+--+
+|                                                     agent                                                      |
++----------------------------------------------------------------------------------------------------------------+--+
+| Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 2 subscribers; feed-id=283347364855282254)       |
+| Serf/0.7.2 mod_pagespeed/0.10.21.2-1381                                                                        |
+| Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)                            |
+| facebookplatform/1.0 (+http://developers.facebook.com)                                                         |
+| DoCoMo/2.0 SH902i (compatible; Y!J-SRD/1.0; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-27.html)  |
++----------------------------------------------------------------------------------------------------------------+--+

@@ -39,7 +39,7 @@ if(instr(lower(agent),"mac")>0, "mac", if(instr(lower(agent), "linux")>0, "linux
 select os, count(*) from agent_logs group by os;
 
 -- Section #2: Provide 5 agents for which the OS could not be classified that are bots
-select agent from agent_logs where length(agent)>15 and bot = 'true' and os = "" limit 5;
+select agent from agent_logs where length(agent)>15 and bot = 1 and os = "" limit 5;
 
 -- Section #3: Provide 5 agents for which the OS could not be classified that are not bots.
-select agent from agent_logs where length(agent)>15 and bot = 'false' and os = "" limit 5;
+select agent from agent_logs where length(agent)>15 and bot = 0 and os = "" limit 5;

@@ -47,16 +47,26 @@
 +----------+----------+--+
 0: jdbc:hive2://localhost:10000> 
 0: jdbc:hive2://localhost:10000> -- Section #2: Provide 5 agents for which the OS could not be classified that are bots
-0: jdbc:hive2://localhost:10000> select agent from agent_logs where length(agent)>15 and bot = 'true' and os = "" limit 5;
-+--------+--+
-| agent  |
-+--------+--+
-+--------+--+
+0: jdbc:hive2://localhost:10000> select agent from agent_logs where length(agent)>15 and bot = 1 and os = "" limit 5;
++---------------------------------------------------------------------------+--+
+|                                   agent                                   |
++---------------------------------------------------------------------------+--+
+| Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)          |
+| Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)  |
+| Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)   |
+| Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)   |
+| Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)       |
++---------------------------------------------------------------------------+--+
 0: jdbc:hive2://localhost:10000> 
 0: jdbc:hive2://localhost:10000> -- Section #3: Provide 5 agents for which the OS could not be classified that are not bots.
-0: jdbc:hive2://localhost:10000> select agent from agent_logs where length(agent)>15 and bot = 'false' and os = "" limit 5;
-+--------+--+
-| agent  |
-+--------+--+
-+--------+--+
+0: jdbc:hive2://localhost:10000> select agent from agent_logs where length(agent)>15 and bot = 0 and os = "" limit 5;
++----------------------------------------------------------------------------------------------------------------+--+
+|                                                     agent                                                      |
++----------------------------------------------------------------------------------------------------------------+--+
+| Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 2 subscribers; feed-id=283347364855282254)       |
+| Serf/0.7.2 mod_pagespeed/0.10.21.2-1381                                                                        |
+| Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)                            |
+| facebookplatform/1.0 (+http://developers.facebook.com)                                                         |
+| DoCoMo/2.0 SH902i (compatible; Y!J-SRD/1.0; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-27.html)  |
++----------------------------------------------------------------------------------------------------------------+--+
 0: jdbc:hive2://localhost:10000> 
