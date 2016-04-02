@@ -52,7 +52,7 @@ create temporary table bot_stats (
 );
 
 insert overwrite table bot_stats
-  select substring(date, 1,7) as monthyear, 
+  select substring(date, 1,7), 
          count(*), 
          count(*), 
          sum(size),
