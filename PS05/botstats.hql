@@ -52,7 +52,7 @@ create temporary table bot_stats (
 );
 
 insert overwrite table bot_stats
-  select select substring(date, 1,7), 
+  select substring(date, 1,7), 
          count(*), 
          count(*), 
          size,
