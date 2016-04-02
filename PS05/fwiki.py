@@ -53,10 +53,10 @@ def logs(sc):
 
 #
 # try this from the command line:
-# ipyspark --py-files=fwiki.py
-# import fwiki
-# char_logs = fwiki.raw_logs(sc).filter(lambda line:"CHAR" in line)
-# char_df   = sqlCtx.createDataFrame(char_logs.map(fwiki.parse_apache_log))
-# char_df.cache()
-# char_df.registerTempTable("logs")
-# sqlCtx.sql("select count(*) from logs").collect()
+#ipyspark --py-files=fwiki.py
+#import fwiki
+#char_logs = fwiki.raw_logs(sc).filter(lambda line:"CHAR" in line)
+#char_df   = sqlCtx.createDataFrame(char_logs.map(fwiki.parse_apache_log))
+#char_df.cache()
+#char_df.registerTempTable("logs")
+#sqlCtx.sql("select ipaddr,datetime from logs where request like '%CHAR(45,120,49,50,45,81,45)%'").collect()

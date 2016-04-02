@@ -4,5 +4,6 @@ Find the logfile lines that contain this request and report:
 • Are there other attacks from the same IP addresses? (If there is more than 1, investigate 3 of them.) 
 
 Your answer goes here:
-
+The attacks seem to be from only one ip address, 92.50.158.21. 
+The attacks all took place on 2012-09-07. 
 
