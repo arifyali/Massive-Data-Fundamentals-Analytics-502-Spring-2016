@@ -55,7 +55,7 @@ insert overwrite table bot_stats
   select substring(date, 1,7) as monthyear, 
          count(*), 
          count(*), 
-         size,
+         sum(size),
          sum(if(bot, size,0)),
          sum(if(bot,0,size))
   from bot_logs
