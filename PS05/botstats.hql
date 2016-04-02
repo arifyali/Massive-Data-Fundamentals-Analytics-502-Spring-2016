@@ -34,7 +34,7 @@ create temporary table bot_logs (
 );
 
 insert overwrite table bot_logs
-  select from_unixtime(unix_timestamp(rawdatetime, "[dd/MM/yyyy:HH:mm:ss Z]")),
+  select from_unixtime(unix_timestamp(rawdatetime, "[dd/MMM/yyyy:HH:mm:ss Z]")),
          int(size),
          agent,
          instr(lower(agent),"bot")>0
