@@ -36,11 +36,10 @@
 . . . . . . . . . . . . . . . .> if(instr(lower(agent),"mac")>0, "mac", if(instr(lower(agent), "linux")>0, "linux",""))), instr(lower(agent),"bot")>0 from raw_logs;
 0: jdbc:hive2://localhost:10000> 
 0: jdbc:hive2://localhost:10000> -- Section #1:
-0: jdbc:hive2://localhost:10000> select os, count(*) from agent_logs group by os;
+0: jdbc:hive2://localhost:10000> select os, count(*) as count from agent_logs where os != "" group by os;
 +----------+----------+--+
-|    os    |   _c1    |
+|    os    |  count   |
 +----------+----------+--+
-|          | 5437974  |
 | windows  | 7876016  |
 | linux    | 1526515  |
 | mac      | 1109049  |

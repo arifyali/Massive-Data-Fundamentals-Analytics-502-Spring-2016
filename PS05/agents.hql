@@ -36,7 +36,7 @@ insert overwrite table agent_logs
 if(instr(lower(agent),"mac")>0, "mac", if(instr(lower(agent), "linux")>0, "linux",""))), instr(lower(agent),"bot")>0 from raw_logs;
 
 -- Section #1:
-select os, count(*) from agent_logs group by os;
+select os, count(*) as count from agent_logs where os != "" group by os;
 
 -- Section #2: Provide 5 agents for which the OS could not be classified that are bots
 select agent from agent_logs where length(agent)>15 and bot = 1 and os = "" limit 5;
