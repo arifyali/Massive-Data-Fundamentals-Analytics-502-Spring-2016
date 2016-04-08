@@ -6,4 +6,31 @@ Find the logfile lines that contain this request and report:
 Your answer goes here:
 The attacks seem to be from only one ip address, 92.50.158.21. 
 The attacks all took place on 2012-09-07. 
+There are 61 unqiue requests that do not contain “CHAR(45,120,49,50,45,81,45)” using this SQL string:
+  "select count(*) from logs where ipaddr='92.50.158.21' and request not like '%CHAR(45,120,49,50,45,81,45)%' group by request"
+Looking at the first three via "select datetime,request from logs where ipaddr='92.50.158.21' and request not like '%CHAR(45,120,49,50,45,81,45)%'"
+
+  Row(datetime=u'2012-09-07T06:18:42-07:00', request=u'GET /wiki/Tools:Memory_Imaging_or_(1,2)%3D(select*from(select_name_const(CHAR(111,108,111,108,111,115,104,101,114),1),name_const(CHAR(111,108,111,108,111,115,104,101,114),1))a)_--_and_1%3D1 HTTP/1.0'),
+  Row(datetime=u'2012-09-07T06:18:46-07:00', request=u'GET /index.php?title=Tools:Memory_Imaging%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(111,108,111,108,111,115,104,101,114),1),name_const(CHAR(111,108,111,108,111,115,104,101,114),1))a)%20--%20%22x%22=%22x HTTP/1.0'),
+  Row(request=u'GET /index.php?title=Tools:Memory_Imaging1111111111111%22%20UNION%20SELECT%20CHAR(45,120,49,45,81,45),CHAR(45,120,50,45,81,45),CHAR(45,120,51,45,81,45),CHAR(45,120,52,45,81,45)%20--%20/*%20order%20by%20%22as%20/* HTTP/1.0')
+which do the following:
+select*from(select_name_const(CHAR(111,108,111,108,111,115,104,101,114),1),name_const(CHAR(111,108,111,108,111,115,104,101,114),1))a)_--_and_1=1
+The 1=1 is a SQL injection technique
+select*from(select name_const(CHAR(111,108,111,108,111,115,104,101,114),1),name_const(CHAR(111,108,111,108,111,115,104,101,114),1))a) -- "x"="x HTTP/1.0
+where "x"="x is also a SQL injection technique
+
+UNION SELECT CHAR(45,120,49,45,81,45),CHAR(45,120,50,45,81,45),CHAR(45,120,51,45,81,45),CHAR(45,120,52,45,81,45) -- /* order by "as /
+where order by "as is also a SQL injection technique
+
+This interesting to see the time is within the same hour. Thus, the injection must be repeated over and over.
+
+To find SQL injection attacks, I used http://www.w3schools.com/sql/sql_injection.asp as a guide and used the following sql querries:
+
+"select datetime,request from logs where ipaddr !='92.50.158.21' and request LIKE '%1=1%'"
+select datetime,request from logs where ipaddr !='92.50.158.21' and request LIKE '%drop%'
+
+It seems like only '92.50.158.21' attempts SQL injection after also checking for %20order%20by%20%22as%20/ and %20%22x%22=%22x
+
+
+
 
